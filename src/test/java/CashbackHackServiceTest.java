@@ -1,15 +1,14 @@
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
+import org.testng.Assert;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class CashbackHackServiceTest {
+public class CashbackHackServiceTest {
 
     @Test
-    void remain() {
-        int amount = 800;
-        int expected = 200;
+    public void remain() {
         CashbackHackService service = new CashbackHackService();
+        int amount = 800;
         int actual = service.remain(amount);
-        assertEquals(expected, actual);
+        int expected = 200;
+        Assert.assertEquals(actual, expected);
     }
 }
