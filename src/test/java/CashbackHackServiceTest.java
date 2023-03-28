@@ -1,5 +1,5 @@
 import org.testng.annotations.Test;
-import org.testng.Assert;
+import static org.testng.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
 
@@ -9,7 +9,7 @@ public class CashbackHackServiceTest {
         int amount = 800;
         int actual = service.remain(amount);
         int expected = 200;
-        Assert.assertEquals(actual, expected);
+        assertEquals(actual, expected);
     }
     @Test
     public void remain2() {
@@ -17,7 +17,7 @@ public class CashbackHackServiceTest {
         int amount = 1000;
         int actual = service.remain(amount);
         int expected = 0;
-        Assert.assertEquals(actual, expected);
+       assertEquals(actual, expected);
     }
     @Test
     public void remain3() {
@@ -25,6 +25,6 @@ public class CashbackHackServiceTest {
         int amount = 1700;
         int actual = service.remain(amount);
         int expected = 300;
-        Assert.assertEquals(actual, expected);
+        assertEquals(actual, expected);
     }
 }
