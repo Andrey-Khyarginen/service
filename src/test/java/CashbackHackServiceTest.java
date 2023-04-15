@@ -1,9 +1,8 @@
-import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
 
-    @Test
+    @org.testng.annotations.Test
     public void remain() {
         CashbackHackService service = new CashbackHackService();
         int amount = 800;
@@ -11,7 +10,7 @@ public class CashbackHackServiceTest {
         int expected = 200;
         assertEquals(actual, expected);
     }
-    @Test
+    @org.testng.annotations.Test
     public void remain2() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
@@ -19,7 +18,7 @@ public class CashbackHackServiceTest {
         int expected = 0;
        assertEquals(actual, expected);
     }
-    @Test
+    @org.testng.annotations.Test
     public void remain3() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1700;
