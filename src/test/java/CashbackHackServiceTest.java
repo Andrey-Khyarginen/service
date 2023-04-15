@@ -1,10 +1,8 @@
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
 
-    @Test
+    @org.junit.Test
     public void remain() {
 
         CashbackHackService service = new CashbackHackService();
@@ -12,7 +10,7 @@ public class CashbackHackServiceTest {
         int expected = 200;
         assertEquals(actual, expected);
     }
-    @Test
+    @org.junit.Test
     public void test() {
 
         CashbackHackService service = new CashbackHackService();
@@ -20,7 +18,7 @@ public class CashbackHackServiceTest {
         int expected = 0;
         assertEquals(actual, expected);
     }
-    @Test
+    @org.junit.Test
     public void test3() {
 
         CashbackHackService service = new CashbackHackService();
